@@ -1,6 +1,6 @@
 Saucedemo automation test
 
-![screenshot](screenshot.png)
+![screenshot](Screenshot.png)
 ## Prerequisites
 
 - Node.js and npm must be installed on your machine.
