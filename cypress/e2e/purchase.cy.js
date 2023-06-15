@@ -4,7 +4,7 @@ import { Product } from "../components/product";
 import { Header } from "../components/header.js";
 import { CheckoutOverview } from "../components/checkoutOverview";
 
-describe("Login", () => {
+describe("Purchase flow", () => {
   beforeEach(() => {
     cy.visit("/");
     cy.login();
