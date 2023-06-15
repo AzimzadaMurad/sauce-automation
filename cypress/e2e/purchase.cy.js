@@ -1,8 +1,8 @@
 import { Cart } from "../components/cart";
-import { CheckoutForm } from "../components/checkoutForm";
+import { CheckoutForm } from "../components/checkout-Form";
 import { Product } from "../components/product";
 import { Header } from "../components/header.js";
-import { CheckoutOverview } from "../components/checkoutOverview";
+import { CheckoutOverview } from "../components/checkout-Overview";
 
 describe("Purchase flow", () => {
   beforeEach(() => {
