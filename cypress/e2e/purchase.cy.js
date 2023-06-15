@@ -14,6 +14,7 @@ describe("Purchase flow", () => {
   it.only("Purchase item", () => {
     //pick the first item and add to cart
     Product.items().eq(0);
+    Product.getPrice();
     Product.addToCart().click();
     Header.cartBadge().should("have.text", 1);
     //go to cart
@@ -28,6 +29,7 @@ describe("Purchase flow", () => {
     CheckoutForm.lastNameInput().type("Azimzada");
     CheckoutForm.postalCodeInput().type("11111");
     CheckoutForm.continueButton().click();
+    CheckoutOverview.itemPrice().invoke("text").should("have.text", "$29.99");
     Header.title().should("have.text", "Checkout: Overview");
     CheckoutOverview.finishButton().click();
     Header.title().should("have.text", "Checkout: Complete!");

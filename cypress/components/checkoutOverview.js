@@ -1,6 +1,6 @@
 export class CheckoutOverview {
-  static subtotalLabel() {
-    return cy.get(".summary_subtotal_label");
+  static itemPrice() {
+    return cy.get(".inventory_item_price");
   }
 
   static finishButton() {

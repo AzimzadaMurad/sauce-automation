@@ -9,4 +9,7 @@ export class Product {
   static addToCart() {
     return cy.get("[data-test='add-to-cart-sauce-labs-backpack']");
   }
+  static getPrice() {
+    return cy.get(".inventory_item_price");
+  }
 }
