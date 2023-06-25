@@ -6,3 +6,4 @@ export class Cart {
   static checkoutButton() {
     return cy.get('[data-test="checkout"]');
   }
+}

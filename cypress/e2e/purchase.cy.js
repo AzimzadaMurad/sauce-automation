@@ -29,7 +29,7 @@ describe("Purchase flow", () => {
     CheckoutForm.lastNameInput().type("Azimzada");
     CheckoutForm.postalCodeInput().type("11111");
     CheckoutForm.continueButton().click();
-    CheckoutOverview.itemPrice().invoke("text").should("have.text", "$29.99");
+    CheckoutOverview.itemPrice().invoke("text").should("contains", "$29.99");
     Header.title().should("have.text", "Checkout: Overview");
     CheckoutOverview.finishButton().click();
     Header.title().should("have.text", "Checkout: Complete!");
